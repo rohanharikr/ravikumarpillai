@@ -198,7 +198,7 @@
 
             <div class="copyright">
                 <p class="pull-left">
-                Copyright © 2020 Ravi Kumar Pillai.
+                Copyright © <span id="year"></span> Ravi Kumar Pillai.
                 </p>
                 <!-- <p class="pull-right">
                 <a target="_blank" href="https://www.wowthemes.net/free-jekyll-template-affiliates/">"Affiliates Theme"</a> - Design & Code by WowThemes.net
@@ -217,7 +217,12 @@
 
 <!-- JavaScript
 ================================================== -->
-    
+
+<script>
+    const date = new Date();
+    document.getElementById("year").innerHTML = date.getFullYear();
+</script>    
+
 <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
     
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
